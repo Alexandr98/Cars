@@ -3,7 +3,7 @@
   <app-cars-form (addCar)="add($event)"></app-cars-form>
 
   <div class="list-group mt-4">
-      <app-car [car]='c' *ngFor="let c of cars"></app-car>
+      <app-car [car]='c' *ngFor="let c of cars" (deleteCar)="delete($event)"></app-car>
    </div>
 
 </div>

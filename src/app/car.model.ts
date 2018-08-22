@@ -4,8 +4,8 @@ export class Car {
     public date: string,
     public model: string,
     public isSold: boolean = false,
-    public id?: number,
-  ){}
+    public id: number,
+  ) {}
 }
 
 

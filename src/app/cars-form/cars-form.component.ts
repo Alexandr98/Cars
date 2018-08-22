@@ -12,7 +12,9 @@ export class CarsFormComponent implements OnInit {
   public carName = '';
   public carModel = '';
 
-  @Output() addCar = new EventEmitter<Car>();
+  @Output()
+  public addCar = new EventEmitter<Car>();
+
   constructor() { }
 
   ngOnInit() {
@@ -28,7 +30,7 @@ export class CarsFormComponent implements OnInit {
       this.carModel,
       false,
       this.id
-    )
+    );
 
     this.addCar.emit(car);
     this.carName = '';
