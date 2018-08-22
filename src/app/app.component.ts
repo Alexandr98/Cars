@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Cars, Car } from './car.model';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'cars';
+  public cars: Car[] = [
+    new Car('Ford', '12.02.18', 'Focus', false, 1),
+    new Car('Audi', '08.07.18', 'A4', false, 2)
+  ];
+
+  add(car: Car) {
+    this.cars.push(car);
+  }
 }

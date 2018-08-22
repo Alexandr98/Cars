@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Car } from '../car.model';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-cars-form',
@@ -6,10 +8,33 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cars-form.component.css']
 })
 export class CarsFormComponent implements OnInit {
+  private id = 2;
+  public carName = '';
+  public carModel = '';
 
+  @Output() addCar = new EventEmitter<Car>();
   constructor() { }
 
   ngOnInit() {
   }
+  public add() {
+    if (this.carModel === '' || this.carName === '') {
+      return;
+        }
+    this.id = ++this.id;
+    const car = new Car (
+      this.carName,
+      moment().format('DD/MM/YY'),
+      this.carModel,
+      false,
+      this.id
+    )
 
+    this.addCar.emit(car);
+    this.carName = '';
+    this.carModel = '';
+  }
+  public load() {
+
+  }
 }
