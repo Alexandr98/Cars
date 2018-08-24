@@ -7,10 +7,7 @@ import { Cars, Car } from './car.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public cars: Car[] = [
-    new Car('Ford', '12.02.18', 'Focus', false, 1),
-    new Car('Audi', '08.07.18', 'A4', false, 2)
-  ];
+  public cars: Car[] = [];
 
  public add(car: Car) {
     this.cars.push(car);
