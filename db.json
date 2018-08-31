@@ -1,0 +1,51 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "name": "Ford",
+      "model": "Focus",
+      "date": "12.02.2015",
+      "isSold": false
+    },
+    {
+      "id": 1,
+      "name": "MAZDA",
+      "model": "CX3",
+      "date": "12.02.2015",
+      "isSold": false
+    },
+    {
+      "id": 1,
+      "name": "BMW",
+      "model": "X1",
+      "date": "12.02.2015",
+      "isSold": false
+    },
+    {
+      "id": 1,
+      "name": "MUSTANG",
+      "model": "GT350",
+      "date": "12.02.2015",
+      "isSold": false
+    },    {
+      "id": 1,
+      "name": "NEXIA",
+      "model": "2",
+      "date": "12.02.2015",
+      "isSold": false
+    },    {
+      "id": 1,
+      "name": "PORSHE",
+      "model": "Cayen",
+      "date": "12.02.2015",
+      "isSold": false
+    },
+    {
+      "id": 1,
+      "name": "SKODA",
+      "model": "ACTAVIA",
+      "date": "12.02.2015",
+      "isSold": false
+    }
+  ]
+}

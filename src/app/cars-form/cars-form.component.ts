@@ -3,7 +3,7 @@ import { Car } from '../car.model';
 import * as moment from 'moment';
 import { AppState } from '../redux/app.state';
 import { Store } from '@ngrx/store';
-import { AddCar } from '../redux/cars.action';
+import { AddCar, LoadCars } from '../redux/cars.action';
 
 @Component({
   selector: 'app-cars-form',
@@ -38,6 +38,6 @@ export class CarsFormComponent implements OnInit {
     this.carModel = '';
   }
   public load() {
-
+    this.store.dispatch(new LoadCars(car));
   }
 }
